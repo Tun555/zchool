@@ -10,18 +10,18 @@ DESCRIPTION = '\n\n'.join(LOAD_TEXT(_) for _ in [
 ])
 
 setup(
-  name = 'oopzchool',      # Name the same with folder
-  packages = ['oopzchool'], 
-  version = '0.0.2',  
+  name = 'lazyemployee',                # Name project the same with folder
+  packages = ['lazyemployee'],          # Name project the same with folder
+  version = '0.0.5',                 # 
   license='MIT', 
-  description = 'OOPzchool learning to upload to PyPI',    #Show on PyPi
+  description = 'lazyemployee learning to upload to PyPI',    #Show on PyPi
   long_description=DESCRIPTION,
-  author = 'Tun Kedsaro',                 
-  author_email = 'Tun.k@ku.th',     
-  url = 'https://github.com/Tun555/zchool',  
-  download_url = 'https://github.com/Tun555/zchool/archive/refs/tags/v0.0.2.zipp',  
-  keywords = ['OOP', 'zhcool', 'Tun'], 
-  install_requires=[            # I get to this in a second
+  author = 'Tun Kedsaro',            #          
+  author_email = 'Tun.k@ku.th',      #
+  url = 'https://github.com/Tun555/Lazyemployee',  #
+  download_url = 'https://github.com/Tun555/Lazyemployee/archive/refs/tags/v0.0.2.zip',                                      #  
+  keywords = ['OOP','Employee'],      # When someone search
+  install_requires=[                 # Package that use
         'numpy',
         'matplotlib',
     ],  

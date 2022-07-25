@@ -1,15 +1,19 @@
-(OOP School) library for learn oop by Tun Kedsaro
-=================================================
+(LazyEmployee) Employee OOP for Testing PyPI by Tun Kedsaro
 
-Python OOP+วิธีสร้าง library เป็นของตัวเอง + Upload package ไปยัง
-PyPI.org PyPI: https://pypi.org/project/unclechat/
+==============================================
 
-This program use for learn how to upload PyPi credit uncle engineer.
+โปรแกรมแชทนี้เป็นโปรแกรมที่เขียนขึ้นมาโดยใช้ Python โดยการเขียนแบบ OOP
+สำหรับใช้งานในการสร้าง class employee อย่างรวดเร็ว เพียงแค่มี Python
+อยู่ในคอมพิวเตอร์ก็สามารถใช้งานได้เลย เบื้องหลังการทำงานจะประกอบไปด้วย
+Engineer,Accounting,Sale
 
-ปล. เวอร์ชั่นนี้ยังไม่สมบูรณ์ (เขียนแบบรีบๆ 55)
-ลุงเขียนขึ้นมาเพื่อประยุกต์นำ Python + Socket Library
-สร้างเป็นโปรแกรมแชทตัวอย่าง สำหรับนักพัฒนาสามารถนำ Source Code
-ไปพัฒนาต่อได้เต็มที่
+ปล. เวอร์ชั่นนี้ยังไม่สมบูรณ์ (เขียนแบบรีบๆ) เขียนเพื่อนำ concept OOP
+มาสร้าง library แล้วก็ upload ขึ้น Github กับ PyPI ต่อไป
+สำหรับนักพัฒนาสามารถนำ Source Code ไปพัฒนาต่อได้เต็มที่
+ซึ่งก็คืออีกโปรเจคนึ่งนั้นแหละ เพราะว่า jupyter มันไม่สามารถ import def
+ได้เหมือนกับตัว คอมก็เลยใช้วิธีนี้เอา และก็ยังมีอีกหลาย library
+ที่เขียนดองเอาไว้ตั้งแต่สมัยเรียน ปี3, 4 แต่ว่ายังไม่ได้ upload
+(เขียนไปงั้นแหละต้องใช้ความยาวระดับหนึ่งไม่งั้นไม่สามารถอัพได้)
 
 วิธีติดตั้ง
 ~~~~~~~~~~~
@@ -18,50 +22,35 @@ This program use for learn how to upload PyPi credit uncle engineer.
 
 .. code:: python
 
-   pip install oopzchool
+    pip install lazyemployee
 
 วิธีใช้
 ~~~~~~~
 
-วิธีการใช้งาน
-~~~~~~~~~~~~~
+[STEP 1] - เปิด IDLE ขึ้นมาแล้วพิมพ์...
 
--  เปิด IDLE ขึ้นมาแล้วพิมพ์…
+.. code:: python
 
-\```python from oopzchool.school import
-Student,Tesla,SpecialStudent,Teacher #Day 0 print(“—-day 0—-”)
-allstudent=[] teacher1 = Teacher(‘Ada lovelace’) teacher2 =
-Teacher(‘Bill Gates’) print(teacher1.students)
+   from lazyemployee import Employee
+   from lazyemployee import Accounting,Programmer,Sale
 
-#Day 1 print(“—-day 1—-”) st1 = Student(‘Albert’,‘Einstein’)
-allstudent.append(st1) teacher2.AddStudent(st1) print(st1.fullname)
+-  หรือเปิด cmd / terminal แล้วพิมพ์
 
-#Day 2 print(“—-day 2—-”) st2 = Student(‘Steve’,‘Jobs’)
-allstudent.append(st2) teacher2.AddStudent(st2) print(st2.fullname)
+.. code:: python
 
-#Day 3 print(“—-day 3—-”) for i in range(3): st1.Coding() st2.Coding()
-st1.ShowEXP() st2.ShowEXP()
+   python -m lazyemployee
 
-#Day 4 print(“—-day 4—-”)
+[STEP 2] - ประกาศ class employee กรอก ชื่อ ตำแหน่งงาน และ เงินเดือน -
+สามารถเรียกการแสดงผลได้โดยการใช้คำสั่ง detail() -
+สามารถเปลี่ยนข้อมูลข้างในได้ด้วยการใช้ฟังก์ชัน setname()
+,setsalary(),setjob() - สามารถรับค่าข้อมูลข้างในได้ด้วยการใช้ฟังก์ชัน
+getname() ,getsalary(),getjob()
 
-stp1 = SpecialStudent(‘Thomas’,‘Edison’,‘Hitler’)
-allstudent.append(stp1) teacher1.AddStudent(stp1) print(stp1.fullname)
-print(“Teasher give me 20 point”) stp1.exp = 20 stp1.Coding()
-stp1.ShowEXP()
 
-#Day 5 print(“—-day 5—-”) print(“Hey student How do you go to your
-home?”) print(allstudent) for st in allstudent: print(“I : {} back home
-with {}”.format(st.name,st.vehicle)) #check ว่า object นี้เป็น class
-อะไร if isinstance(st,SpecialStudent): st.vehicle.SelfDriving(st)
-
-#Day 6 print(“—-day 6—-”) teacher1.CheckStudent()
-teacher2.CheckStudent() print(‘Sum exp’,st1+st2)
-
-หากต้องการสร้างห้องใหม่ - กด New Room - โปรแกรมจะสร้างห้องให้อัตโนมัติ
-(จำเลขห้องไว้ส่งให้เพื่อน) - กด Enter Chatroom เพื่อเริ่มแชท
 
 [STEP 3] - ใช้งานได้เลยจ้าาา
-หากมีการกดปิดโปรแกรมระบบจะแจ้งให้สมาชิกท่านอื่นทราบว่าผู้ใช้ได้ออกจากกลุ่มแล้ว
 
-พัฒนาโดย: ลุงวิศวกร สอนคำนวณ FB: https://www.facebook.com/UncleEngineer
-YouTube: https://www.youtube.com/UncleEngineer
+Develop by : Tun Kedsaro 
+FB: I dont tell you. 
+YouTube: Tun Kedsaro
+
