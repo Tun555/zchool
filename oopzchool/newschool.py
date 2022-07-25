@@ -1,7 +1,7 @@
-# _*_ coding: utf-8 _*_
-import school
-from school import Student,SpecialStudent
-from school import *
+# # _*_ coding: utf-8 _*_
+import oopzchool.school
+from oopzchool.school import Student,SpecialStudent
+from oopzchool.school import *
 
 def Test():
     """    
@@ -29,5 +29,4 @@ def Test():
 
 
 print(help(Test))
-
 
